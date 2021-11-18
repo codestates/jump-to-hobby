@@ -138,6 +138,14 @@ export const SideBar = styled.div`
 export const Menu = styled.div`
   display: flex;
   justify-content: right;
+  .userinfo-content {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+  }
+  .userinfo-content div {
+    margin: 10px;
+  }
 `;
 
 export const MenuButton = styled.button`
@@ -156,7 +164,6 @@ export const MenuButton = styled.button`
   border-radius: 25px;
   margin-top: 30px;
   background-color: #f49c1f;
-
   :hover {
     background-color: black;
     transition: all 0.3s;
@@ -210,7 +217,6 @@ export const ImagesContainer = styled.div`
     margin-left: 8em;
     margin-right: 8em;
   }
-
   img {
     cursor: pointer;
     width: 600px;
@@ -218,7 +224,6 @@ export const ImagesContainer = styled.div`
     object-fit: cover;
     border-radius: 50px;
   }
-
   @media only screen and (max-width: 1900px) {
     ul {
       grid-template-columns: repeat(2, 1fr);
@@ -239,7 +244,6 @@ export const ProfileImages = styled.div`
     grid-gap: 10px;
     list-style: none;
   }
-
   img {
     cursor: pointer;
     width: 150px;
@@ -247,7 +251,6 @@ export const ProfileImages = styled.div`
     object-fit: cover;
     border-radius: 100px;
   }
-
   @media only screen and (max-width: 1900px) {
     ul {
       grid-template-columns: repeat(2, 1fr);
@@ -274,7 +277,6 @@ export const TopButton = styled.div`
   background-color: #f49c1f;
   color: white;
   transition: all 0.3s;
-
   :hover {
     background-color: black;
     transition: all 0.3s;
@@ -290,7 +292,6 @@ export const Icon = styled.div`
     transition: all 0.3s;
     transform: translate(20%, 40%);
   }
-
   .search-arrow {
     width: 25px;
     height: 25px;
@@ -298,7 +299,6 @@ export const Icon = styled.div`
     transform: translate(0%, -15%);
     transition: all 0.3s;
   }
-
   .search-icon:hover {
     color: black;
     transition: all 0.3s;

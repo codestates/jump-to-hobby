@@ -28,7 +28,6 @@ export const Logo = styled.div`
 
 export const SideBar = styled.div`
   display: flex;
-
   justify-content: right;
   flex-direction: column;
   margin-top: 200px;
@@ -87,7 +86,6 @@ export const MenuButton = styled.button`
   margin-left: 13rem;
   border-radius: 13px;
   background-color: #f49c1f;
-
   :hover {
     background-color: black;
     transition: all 0.3s;
@@ -143,7 +141,6 @@ export const ImagesContainer = styled.div`
     grid-gap: 10px;
     list-style: none;
   }
-
   img {
     cursor: pointer;
     width: 600px;
@@ -151,7 +148,6 @@ export const ImagesContainer = styled.div`
     object-fit: cover;
     border-radius: 50px;
   }
-
   @media only screen and (max-width: 1900px) {
     ul {
       grid-template-columns: repeat(2, 1fr);
@@ -171,7 +167,6 @@ export const ProfileImages = styled.div`
     grid-gap: 10px;
     list-style: none;
   }
-
   img {
     cursor: pointer;
     width: 150px;
@@ -179,7 +174,6 @@ export const ProfileImages = styled.div`
     object-fit: cover;
     border-radius: 100px;
   }
-
   @media only screen and (max-width: 1900px) {
     ul {
       grid-template-columns: repeat(2, 1fr);
@@ -201,7 +195,6 @@ export const Icon = styled.div`
     transition: all 0.3s;
     transform: translate(20%, 40%);
   }
-
   .search-arrow {
     width: 25px;
     height: 25px;
@@ -209,7 +202,6 @@ export const Icon = styled.div`
     transform: translate(0%, -15%);
     transition: all 0.3s;
   }
-
   .search-icon:hover {
     color: black;
     transition: all 0.3s;
@@ -228,11 +220,9 @@ const Input = styled.input`
   padding-left: 5px;
   color: ${(props) => props.inputColor || "red"};
   background: papayawhip;
-
   /* display: flex; */
   padding: 0.5em;
   margin: 0.5em;
-
   background: papayawhip;
   border-color: #ffff;
   border-radius: 10px;
@@ -254,7 +244,6 @@ export const Button = styled.div`
     align-items: center;
     justify-content: center;
   }
-
   .cancel {
     background-color: gray;
   }
