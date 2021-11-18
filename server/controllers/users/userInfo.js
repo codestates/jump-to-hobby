@@ -10,8 +10,21 @@ module.exports = async (req, res) => {
   if (!accessTokenData) {
     res.status(401).send({ data: null, message: "not authorized" });
   } else {
-    res
-      .status(200)
-      .json({ data: { userInfo: accessTokenData }, message: "ok" });
+    const userInfo = await user.findOne({
+      where: {
+        id: accessTokenData.id,
+        email: accessTokenData.email,
+        username: accessTokenData.username,
+        users_image: accessTokenData.users_image,
+      },
+    });
+    delete userInfo.dataValues.password;
+    res.status(200).json({ data: { userInfo: userInfo.dataValues } });
   }
 };
+
+// else {
+//   res
+//     .status(200)
+//     .json({ data: { userInfo: accessTokenData }, message: "ok" });
+// }
