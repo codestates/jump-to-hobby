@@ -144,7 +144,7 @@ export const MenuButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: blue;
+  background-color: #f49c1f;
   font-size: 1rem;
   color: white;
   width: 100px;
@@ -207,6 +207,8 @@ export const ImagesContainer = styled.div`
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     list-style: none;
+    margin-left: 8em;
+    margin-right: 8em;
   }
 
   img {
@@ -496,19 +498,19 @@ function Mypage({ loginInfo }) {
               <img src="/images/reading.jpg" />
             </li>
             <li>
-              <img src="/images/sea.jpeg" />
+              <img src="/images/trip.jpg" />
             </li>
             <li>
-              <img src="/images/logo.png" />
-            </li>
-            <li>
-              <img src="/images/sea.jpeg" />
+              <img src="/images/game.jpg" />
             </li>
             <li>
               <img src="/images/sea.jpeg" />
             </li>
             <li>
-              <img src="/images/sea.jpeg" />
+              <img src="/images/mario.jpg" />
+            </li>
+            <li>
+              <img src="/images/coffie.jpg" />
             </li>
           </ul>
         </ImagesContainer>
