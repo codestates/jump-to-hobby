@@ -43,4 +43,12 @@ Object.keys(db).forEach((modelName) => {
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
+const { post, user, posts_img } = sequelize.models;
+//다시확인 user, posts_img =1:n
+post.belongsTo(user);
+user.hasMany(post);
+
+posts_img.belongsTo(post);
+post.hasMany(posts_img);
+
 module.exports = db;
