@@ -1,7 +1,7 @@
 # jump-to-hobby
 ## LOGO
+![image](https://cdn.discordapp.com/attachments/907147691765674049/907910847534366730/logo_2.png)
 
-![image](https://media.discordapp.net/attachments/856381385051865088/910102825508425768/logo-removebg-preview.png)
 취미를 혼자서 즐기고 있나요?
 다른 사람과 취미를 공유해보고 싶지 않으신가요?
 여러분의 취미를 jump-to-hobby 에서 공유해보세요.
